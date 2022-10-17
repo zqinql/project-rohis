@@ -1,0 +1,15 @@
+
+
+.card-tanggal{
+    font-size: 8px;
+    color: blue;
+}
+
+.profil-img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+.container-blog{
+    display: flex;
+}
