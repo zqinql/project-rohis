@@ -17,7 +17,10 @@
           <a class="nav-link" href="blog.php">Post Blog</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="registrasi.php">Post Blog</a>
+          <a class="nav-link" href="login.php">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="registrasi.php">registrasi</a>
         </li>
       </ul>
     </div>

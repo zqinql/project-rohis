@@ -37,7 +37,7 @@ require_once 'connect.php';
 Cari apa?</h2>
     <div>
      <a href="./alquran/index.php"><h1>Al Qur'an</h1></a>
-     <a href="blog/blog.php"><h1>Blog</h1></a>
+     <a href="blog/index.php"><h1>Blog</h1></a>
      <a href="#"><h1>Jadwal Shalat</h1></a>
      <a href="#"> <h1>Learn Agama Islam</h1></a>
       <a href="#"><h1>Contribusi</h1></a>

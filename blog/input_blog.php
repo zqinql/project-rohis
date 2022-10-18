@@ -9,13 +9,12 @@ if(isset($_POST['submit'])){
         </script>";
 
     } else{
-        "<script>
+        echo"<script>
         alert('UPS, ada yg salah!. tapi jangan panik hehe laporin kesalahan yg kamu dapatkan agar kami perbaiki')
-        </script>";
+        </script>" . mysqli_error($con);
     }
 }
 ?>
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -31,7 +30,7 @@ if(isset($_POST['submit'])){
     ?>
     <br>
     <?php
-    $tag_q = mysqli_query($con, "SELECT tag FROM blog ORDER BY tag");
+    $tag_q = mysqli_query($con, "SELECT distinct(tag) FROM blog ORDER BY tag");
     if(!isset($tag_q)){
       die('ada yg eror');
     }
@@ -51,14 +50,11 @@ if(isset($_POST['submit'])){
             <button type="submit" name="submit">Submit</button>
             </div>
 
-
         <div class="kanan">
           <label for="tag">Tag</label>
-              <select class="form-select" id="tag" aria-label="Default select example" name="tag">
-                  <option selected>Open this select menu</option>
+              <select class="form-select" id="tag" name="select-tag">
                   <?php while($opsi = mysqli_fetch_array($tag_q)) : ?>
-                    <option value="1">Fiqih</option>
-                  <option value="2"><?=$opsi['tag']?></option>
+                  <option value="<?=$opsi['tag']?>"><?=$opsi['tag']?></option>
                   <?php endwhile ?>
               </select>
               <label for="tag-baru">Tag Baru</label>
