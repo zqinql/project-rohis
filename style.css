@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Uthmani';
+    src: url('assets/font/UthmanicHafs1Ver09.otf') format('truetype');
+  }
+
+.arabic{
+    font-family: 'Uthmani', serif;
+}
+
 .card-tanggal{
     font-size: 8px;
     color: blue;
@@ -10,4 +19,33 @@
 }
 .container-blog{
     display: flex;
+}
+.link-card{
+    color: black;
+}
+.nama-surah{
+    width: 100vw;
+    text-align: center;
+}
+.ayat{
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter{
+    display: flex;
+}
+
+.link-foot{
+    color: white;
+    text-decoration: none;
+}
+
+   
+
+
+@media screen and (min-width: 1300) {
+    .pesan{
+        margin: 0 300px !important;
+    }
 }
